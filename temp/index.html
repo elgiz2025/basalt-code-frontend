@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet" />
   <title>Активный спринт</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -100,112 +102,125 @@
       </div>
     </section>
 
-    <section class="current-task">
-      <div class="task-header">
-        <div class="task-icon">
-          <img src="./img/task-icon.svg" alt="Task Icon" />
-        </div>
-        <h3>Текущая задача: Basalt Arena (frontend)</h3>
-      </div>
-      <div class="task-details">
-        <p class="task-description">
-          «Перед вами — макет той самой платформы, на которой вы сейчас
-          находитесь. Ваша задача — сверстать его. Да, это рекурсия.»
-        </p>
-        <p class="task-instruction">
-          Реализуйте все три страницы по макету: index.html (активный спринт),
-          hall.html (зал славы) и profile.html (профиль). Стек — любой: чистый
-          HTML/CSS, React, Vue, Svelte, Tailwind, Bootstrap, генерация через
-          ИИ — что угодно.
-        </p>
-        <h4 class="acceptance-criteria-title">Критерии приёмки:</h4>
-        <ul class="acceptance-criteria">
-          <li>
-            Главное — <span class="color-span"> соответствие макету</span>. Чем точнее, тем выше оценка
-            наставника.
-          </li>
-          <li>
-            Весь независимый от бэка JS-функционал должен работать: модалки,
-            таймер, табы, формы и т.д.
-          </li>
-          <li>
-            Все запросы к серверу — через мок-API (заглушки). На основе
-            победившего мок-API в следующем спринте будем проектировать
-            настоящий бэкенд.
-          </li>
-        </ul>
-        <section class="useful-links">
-          <h4>Полезные ссылки</h4>
-          <div class="links">
-            <div class="link-item">
-              <div class="link-icon">
-                <img src="./img/sdk-icon.svg" alt="SDK Icon" />
-              </div>
-              <span>Платформенный SDK v2.1</span>
-            </div>
-            <div class="link-item">
-              <div class="link-icon">
-                <img src="./img/Quantum-Icon.svg" alt="Quantum Icon" />
-              </div>
-              <span>Спецификация Quantum</span>
-            </div>
-            <div class="link-item">
-              <div class="link-icon">
-                <img src="./img/Tests-Icon.svg" alt="Tests Icon" />
-              </div>
-              <span>Репозиторий тестов</span>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
 
-    <section class="submission-terminal">
-      <div class="submission-header">
-        <div class="submission-icon">
-          <img src="./img/Terminal-Icon.svg" alt="Terminal Icon" />
-        </div>
-        <h3>Терминал отправки</h3>
-      </div>
-      <form class="submission-form">
-        <div class="field-group">
-          <label>Ссылка на репозиторий</label>
-          <div class="input-container">
-            <input type="url" placeholder="https://github.com/..." />
-            <span class="input-icon">
-              <img src="./img/Repo-Icon.svg" alt="Repo Icon" />
-            </span>
-          </div>
-        </div>
-        <div class="field-group">
-          <label>Ссылка на демо (необязательно)</label>
-          <div class="input-container">
-            <input type="url" placeholder="https://demo.basalt..." />
-            <span class="input-icon">
-              <img src="./img/Demo-Icon.svg" alt="Demo Icon" />
-            </span>
-          </div>
-        </div>
-        <button type="submit" class="submit-button">
-          <span>Отправить решение</span>
-          <span class="submit-icon"><img src="./img/Send-Icon.svg" alt="Send Icon" /></span>
-        </button>
-      </form>
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8">
 
-    <section class="player-rank">
-      <div class="rank-entry">
-        <div class="position-label">Ваша позиция</div>
-        <div class="position-value">
-          <span>#3</span>
-          <span>/10</span>
+          <section class="current-task">
+            <div class="task-header">
+              <div class="task-icon">
+                <img src="./img/task-icon.svg" alt="Task Icon" />
+              </div>
+              <h3>Текущая задача: Basalt Arena (frontend)</h3>
+            </div>
+            <div class="task-details">
+              <p class="task-description">
+                «Перед вами — макет той самой платформы, на которой вы сейчас
+                находитесь. Ваша задача — сверстать его. Да, это рекурсия.»
+              </p>
+              <p class="task-instruction">
+                Реализуйте все три страницы по макету: index.html (активный спринт),
+                hall.html (зал славы) и profile.html (профиль). Стек — любой: чистый
+                HTML/CSS, React, Vue, Svelte, Tailwind, Bootstrap, генерация через
+                ИИ — что угодно.
+              </p>
+              <h4 class="acceptance-criteria-title">Критерии приёмки:</h4>
+              <ul class="acceptance-criteria">
+                <li>
+                  Главное — <span class="color-span"> соответствие макету</span>. Чем точнее, тем выше оценка
+                  наставника.
+                </li>
+                <li>
+                  Весь независимый от бэка JS-функционал должен работать: модалки,
+                  таймер, табы, формы и т.д.
+                </li>
+                <li>
+                  Все запросы к серверу — через мок-API (заглушки). На основе
+                  победившего мок-API в следующем спринте будем проектировать
+                  настоящий бэкенд.
+                </li>
+              </ul>
+              <section class="useful-links">
+                <h4>Полезные ссылки</h4>
+                <div class="links">
+                  <div class="link-item">
+                    <div class="link-icon">
+                      <img src="./img/sdk-icon.svg" alt="SDK Icon" />
+                    </div>
+                    <span>Платформенный SDK v2.1</span>
+                  </div>
+                  <div class="link-item">
+                    <div class="link-icon">
+                      <img src="./img/Quantum-Icon.svg" alt="Quantum Icon" />
+                    </div>
+                    <span>Спецификация Quantum</span>
+                  </div>
+                  <div class="link-item">
+                    <div class="link-icon">
+                      <img src="./img/Tests-Icon.svg" alt="Tests Icon" />
+                    </div>
+                    <span>Репозиторий тестов</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+        </div>
+      
+        <div class="col-sm-12 col-md-12 col-lg-4">
+
+          <section class="submission-terminal">
+            <div class="submission-header">
+              <div class="submission-icon">
+                <img src="./img/Terminal-Icon.svg" alt="Terminal Icon" />
+              </div>
+              <h3>Терминал отправки</h3>
+            </div>
+            <form class="submission-form">
+              <div class="field-group">
+                <label>Ссылка на репозиторий</label>
+                <div class="input-container">
+                  <input type="url" placeholder="https://github.com/..." />
+                  <span class="input-icon">
+                    <img src="./img/Repo-Icon.svg" alt="Repo Icon" />
+                  </span>
+                </div>
+              </div>
+              <div class="field-group">
+                <label>Ссылка на демо (необязательно)</label>
+                <div class="input-container">
+                  <input type="url" placeholder="https://demo.basalt..." />
+                  <span class="input-icon">
+                    <img src="./img/Demo-Icon.svg" alt="Demo Icon" />
+                  </span>
+                </div>
+              </div>
+              <button type="submit" class="submit-button">
+                <span>Отправить решение</span>
+                <span class="submit-icon"><img src="./img/Send-Icon.svg" alt="Send Icon" /></span>
+              </button>
+            </form>
+          </section>
+
+          <section class="player-rank">
+            <div class="rank-entry">
+              <div class="position-label">Ваша позиция</div>
+              <div class="position-value">
+                <span>#3</span>
+                <span>/10</span>
+              </div>
+            </div>
+            <div class="point-entry">
+              <div class="points-label">Очков заработано</div>
+              <div class="points-value">90</div>
+            </div>
+          </section>
+
         </div>
       </div>
-      <div class="point-entry">
-        <div class="points-label">Очков заработано</div>
-        <div class="points-value">90</div>
-      </div>
-    </section>
+
   </main>
 
   <footer class="footer">
@@ -233,6 +248,11 @@
   <!-- //1 -->
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
